@@ -1,0 +1,1 @@
+Volverlo una aplicacion para gestionar distintas listas y guardarlas en una base de datos

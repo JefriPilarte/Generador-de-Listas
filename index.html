@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Lista de Compras</title>
+</head>
+<body class="body">
+
+    <div id="botonera">
+        
+        <form id="texto1">
+            <input type="text" id="Producto" placeholder="Agregar Producto" autocomplete="off">
+        </form>
+
+        <form id="texto2">
+            <input type="number" id="Precio"placeholder="Agregar Precio" autocomplete="off">
+        </form>
+
+        <button id="agregar" onclick="agregar()"><b>AGREGAR</b></button>
+        <button id="agregarTodos" onclick="agregarTodos()"><b>AGREGAR TODOS</b></button>
+        <button id="agregar" onclick="reiniciar()"><b>REINICIAR</b></button>
+    </div>
+    
+    <div id="container">
+        <p class="productoTexto">Productos</p>
+        <p class="precioTexto">Precio</p>
+
+        <p id="totalProductos">Productos totales: 0</p>
+        <p id="totalPrecio">Precio total: 0.00 $</p>
+    </div>
+
+<script src="js.js"></script>    
+</body>
+</html>

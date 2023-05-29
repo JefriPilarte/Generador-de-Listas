@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(31, 31, 31);
+    color: rgb(224, 224, 224);
+    font-family: 'kanit';
+}
+
+body::-webkit-scrollbar{
+    background-color: rgb(24, 24, 24);
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(46, 46, 46);
+}
+
+#container{
+    width: 70vw;
+    height: auto;
+    background: rgba(88, 88, 88, 0.438);
+    margin: 5vw 0 10vw 5VW;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
+    border: 2px solid rgb(44, 44, 44);
+}
+
+#botonera{
+    width: 20vw;
+    display: grid;
+    border: 2px solid rgba(27, 27, 27, 0.863);
+    position: fixed;
+    top: 32vw;
+    left: 78vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+#texto1 > input,
+#texto2 > input{
+    width: 19.8vw;
+    height: 3.3vw;
+}
+
+#texto2 > input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.productoTexto, .precioTexto{
+    font-size: 2.2vw;
+    padding: 1vw;
+    background: rgb(39, 39, 39);
+    border: 2px solid rgba(27, 27, 27, 0.863);
+}
+
+.productos{
+    font-size: 1.3vw;
+    padding: 0.5vw;
+    background: rgb(51, 51, 51);
+    border: 1px solid rgba(34, 34, 34, 0.863);
+}
+
+#totalPrecio, #totalProductos{
+    font-size: 1vw;
+    padding: 0.3vw;
+    background-color: rgb(41, 41, 41);
+    border: 0px solid rgba(34, 34, 34, 0.863);
+}
+
+input{
+    display: inline-block;
+    font-size: 1.2vw;
+    outline: none;
+    font-family: 'kanit';
+    background: rgb(58, 58, 58);
+    border: 2px solid rgb(27, 27, 27);
+    color: rgb(231, 231, 231);
+    padding: 0.6vh;
+    transition: 200ms;
+}
+
+input:hover{
+    background: rgb(43, 43, 43);
+    border: 2px solid rgb(116, 116, 116);
+    transition: 250ms;
+}
+
+button{
+    font-size: 1.3vw;
+    font-family: 'kanit';
+    background: rgb(53, 53, 53);
+    border: 2px solid rgb(27, 27, 27);
+    color: rgba(231, 231, 231, 0.781);
+    padding: 1vh;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+button:hover{
+    background: rgb(32, 32, 32);
+    border: 2px solid rgb(71, 71, 71);
+    color: rgb(255, 255, 255);
+    transition: 110ms;
+}
